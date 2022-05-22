@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*--Resetea los estilos de la página y elimina los margenes que aplica el navegador*/
+}
+
+
+/* todo esto lo puse en el index */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+.contenedor {
+    padding: 0 70px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 72px;
+    color: #121258;
+    -webkit-text-stroke: 1.6px white;
+}
+
+.contenedor-arriba {
+    padding: 10px 0;
+    background-image: url('../assets/img/killuazz.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+
+.contenedor-arriba .redes {
+    display: flex;
+    flex-direction: column;
+    font-size: 60px;
+    gap: 5px;
+}
+
+.contenedor-arriba img {
+    height: auto;
+    width: 150px;
+}
+
+
+/*----*/
+
+.navegacion ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(18, 10, 88);
+}
+
+.navegacion ul li {
+    padding: 50px;
+}
+
+.navegacion ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navegacion ul li:hover {
+    background-color: #373766;
+}
+
+
+/*---*/
+
+.titlee {
+    margin: 45px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.articulo-img {
+    display: flex;
+    justify-content: center;
+}
+
+.articulo-img img {
+    width: 85%;
+    height: 450px;
+}
+
+.articulo p {
+    margin: 30px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/*--*/
+
+.footer {
+    background-color: black;
+    padding-top: 50px;
+    margin-top: 20px;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer p {
+    color: white;
+}
+
+.contenido-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.contenido-footer .redes-footer {
+    color: white;
+}
+
+@media (max-width:768px) {
+    .footer ul {
+        display: block;
+        text-align: center;
+    }
+    .footer ul li {
+        margin-bottom: 20px;
+    }
+    .footer ul li:hover {
+        background-color: rgb(52, 52, 109);
+    }
+}
+
+
+/* esto es productos destacados*/
+
+.titules {
+    text-align: center;
+    font-size: 72px;
+    color: rgb(18, 18, 88);
+    -webkit-text-stroke: 1.6px white;
+}
+
+.titleh2 {
+    margin: 45px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.arb {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.arb img {
+    width: 330px;
+    height: 330px;
+    border-style: solid;
+}
+
+
+/*--*/
+
+table {
+    padding: 10px;
+    width: 100%;
+}
+
+td {
+    border: solid 1px blue;
+    padding: 5px;
+}
+
+th {
+    background-color: rgb(49, 49, 126);
+    color: black;
+}
+
+tr:hover {
+    background-color: rgb(194, 194, 202);
+    cursor: pointer;
+}
+
+
+/*--*/
+
+.titulopp {
+    margin: 45px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+
+/*--*/
+
+.form-register {
+    width: 400px;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: solid black;
+    font-size: 15px;
+}
+
+.form-register .botons {
+    width: 100px;
+    padding: 12px;
+    border: none;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+
+/*--*/
+
+.negacie ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(18, 10, 88);
+}
+
+.negacie ul li {
+    padding: 50px;
+}
+
+.negacie ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.negacie ul li:hover {
+    background-color: rgb(55, 55, 102);
+}
+
+
+/*--*/
+
+.titu {
+    margin: 45px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.contenido-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.contenido-contacto img {
+    border: 1px solid rgb(14, 14, 51);
+    border-radius: 10px;
+}
+
+.comprar {
+    margin: 45px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.comprar p {
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.contenido-como-comprar p {
+    margin-bottom: 60px;
+}
+
+form fieldset {
+    padding: 10px;
+}
+
+.utility-remove-deco {
+    list-style: none;
+}
+
+
+/* section en productos destacados*/
+
+.space {
+    margin: 40px;
+}
+
+
+/* poniendo grid en como comprar */
+
+.grid {
+    display: grid;
+    padding: 80px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+
+.grid div {
+    background-color: rgb(206, 207, 215);
+    padding: 1em;
+}
+
+.grid div:hover {
+    border: 1px solid rgb(23, 63, 193);
+}
+
+.titulo-h3 {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(26, 26, 82);
+}
+
+@media (max-width:768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* index */
+
+.productos {
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    animation-name: rubberBand;
+    animation-duration: 5s;
+}
+
+.produc {
+    display: grid;
+    background-color: black;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 33% 33% 33%;
+}
+
+.produc div {
+    padding: 30px;
+    background-color: rgb(42, 42, 234);
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+}
+
+
+/*--*/
+
+@media (max-width: 680px) {
+    .navegacion ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

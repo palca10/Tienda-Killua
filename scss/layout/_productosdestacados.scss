@@ -1,0 +1,50 @@
+.titules {
+    text-align: center;
+    font-size: 72px;
+    color: rgb(18, 18, 88);
+    -webkit-text-stroke: 1.6px white;
+}
+
+.titleh2 {
+    margin: 45px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.titules {
+    @extend .titleh2;
+}
+
+.arb {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    img {
+        width: 330px;
+        height: 330px;
+        border-style: solid;
+    }
+}
+
+table {
+    padding: 10px;
+    width: 100%;
+    td {
+        border: solid 1px blue;
+        padding: 5px;
+    }
+    th {
+        background-color: rgb(49, 49, 126);
+        color: black;
+    }
+    &:hover {
+        background-color: rgb(194, 194, 202);
+        cursor: pointer;
+    }
+}
+
+.space {
+    margin: 40px;
+}

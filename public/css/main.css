@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: white; }
+
+.contenedor {
+  padding: 0 70px; }
+
+.fondo-azul-oscuro {
+  background-color: #121258; }
+
+.fondo-dark {
+  background-color: black; }
+
+.fondo-blanco {
+  background-color: #fff; }
+
+div {
+  background-color: blue;
+  color: red; }
+
+.contenedor-arriba {
+  border: 10px solid red;
+  border-radius: 8px; }
+
+.titulo {
+  text-align: center;
+  font-size: 72px;
+  color: #121258;
+  -webkit-text-stroke: 1.6px #fff; }
+
+.contenedor-arriba {
+  padding: 10px 0;
+  background-image: url("../../assets/img/killuazz.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff; }
+  .contenedor-arriba .logo {
+    animation-name: rotar_logo;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-delay: 3s; }
+  .contenedor-arriba .redes {
+    display: flex;
+    flex-direction: column;
+    font-size: 60px;
+    gap: 5px; }
+  .contenedor-arriba img {
+    height: auto;
+    width: 150px; }
+
+.navegacion ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: #121258; }
+  .navegacion ul li {
+    padding: 50px; }
+    .navegacion ul li a {
+      text-decoration: none;
+      color: #fff; }
+    .navegacion ul li:hover {
+      background-color: #373766; }
+
+.titlee {
+  margin: 45px auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px; }
+
+.articulo-img {
+  display: flex;
+  justify-content: center; }
+  .articulo-img img {
+    width: 85%;
+    height: 450px; }
+
+.articulo p {
+  margin: 30px 0;
+  font-size: 20px;
+  text-align: center; }
+
+.footer {
+  background-color: black;
+  padding-top: 50px;
+  margin-top: 20px; }
+  .footer ul {
+    display: flex;
+    justify-content: space-around; }
+    .footer ul li {
+      list-style: none; }
+      .footer ul li a {
+        color: #fff;
+        text-decoration: none; }
+  .footer p {
+    color: #fff; }
+  .footer .contenido-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; }
+    .footer .contenido-footer .redes-footer {
+      color: #fff; }
+
+@media (max-width: 768px) {
+  .footer ul {
+    display: block;
+    text-align: center; }
+    .footer ul li {
+      margin-bottom: 20px; }
+      .footer ul li:hover {
+        background-color: #373766; } }
+
+@keyframes rotar_logo {
+  0% {
+    transform: rotateX(0deg); }
+  50% {
+    transform: rotateX(180deg); }
+  100% {
+    transform: rotateX(360deg); } }
+
+.productos {
+  padding: 20px;
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  animation-name: rubberBand;
+  animation-duration: 5s; }
+
+.produc {
+  display: grid;
+  background-color: black;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: repeat(3, 33%); }
+  .produc div {
+    padding: 30px;
+    background-color: #2a2aea;
+    text-align: center;
+    color: black;
+    border: 1px solid black; }
+
+.grid {
+  display: grid;
+  padding: 80px;
+  background-image: linear-gradient(#1717a0, black);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(50px, auto);
+  gap: 1em; }
+  .grid div {
+    background-color: #606168;
+    padding: 1em; }
+    .grid div:hover {
+      border: 1px solid #173fc1; }
+
+.fondo-azul-oscuro {
+  background-color: #121258; }
+
+.fondo-dark {
+  background-color: black; }
+
+.fondo-blanco {
+  background-color: #fff; }
+
+div {
+  background-color: blue;
+  color: red; }
+
+.contenedor-arriba {
+  border: 10px solid red;
+  border-radius: 8px; }
+
+.titules {
+  text-align: center;
+  font-size: 72px;
+  color: #121258;
+  -webkit-text-stroke: 1.6px white; }
+
+.titleh2, .titules {
+  margin: 45px auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px; }
+
+.arb {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap; }
+  .arb img {
+    width: 330px;
+    height: 330px;
+    border-style: solid; }
+
+table {
+  padding: 10px;
+  width: 100%; }
+  table td {
+    border: solid 1px blue;
+    padding: 5px; }
+  table th {
+    background-color: #31317e;
+    color: black; }
+  table:hover {
+    background-color: #c2c2ca;
+    cursor: pointer; }
+
+.space {
+  margin: 40px; }

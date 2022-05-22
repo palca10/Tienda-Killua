@@ -1,0 +1,191 @@
+.titulo {
+    text-align: center;
+    font-size: 72px;
+    color: $azul-oscuro;
+    -webkit-text-stroke: 1.6px $blanco;
+}
+
+.contenedor-arriba {
+    padding: 10px 0;
+    background-image: url('../../assets/img/killuazz.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $blanco;
+    .logo {
+        animation-name: rotar_logo;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 3s;
+        animation-delay: 3s;
+    }
+    .redes {
+        display: flex;
+        flex-direction: column;
+        font-size: 60px;
+        gap: 5px;
+    }
+    img {
+        height: auto;
+        width: 150px;
+    }
+}
+
+.navegacion ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: $azul-oscuro;
+    li {
+        padding: 50px;
+        a {
+            text-decoration: none;
+            color: $blanco;
+        }
+        &:hover {
+            background-color: rgb(55, 55, 102);
+        }
+    }
+}
+
+.titlee {
+    margin: 45px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.articulo-img {
+    display: flex;
+    justify-content: center;
+    img {
+        width: 85%;
+        height: 450px;
+    }
+}
+
+.articulo p {
+    margin: 30px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer {
+    background-color: black;
+    padding-top: 50px;
+    margin-top: 20px;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        li {
+            list-style: none;
+            a {
+                color: $blanco;
+                text-decoration: none;
+            }
+        }
+    }
+    p {
+        color: $blanco;
+    }
+    .contenido-footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        .redes-footer {
+            color: $blanco;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .footer ul {
+        display: block;
+        text-align: center;
+        li {
+            margin-bottom: 20px;
+            &:hover {
+                background-color: $azul-blanco;
+            }
+        }
+    }
+}
+
+@keyframes rotar_logo {
+    0% {
+        transform: rotateX(0deg);
+    }
+    50% {
+        transform: rotateX(180deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+.productos {
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    animation-name: rubberBand;
+    animation-duration: 5s;
+}
+
+.produc {
+    display: grid;
+    background-color: black;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(3, 33%);
+    div {
+        padding: 30px;
+        background-color: rgb(42, 42, 234);
+        text-align: center;
+        color: black;
+        border: 1px solid black;
+    }
+}
+
+.grid {
+    display: grid;
+    padding: 80px;
+    background-image: linear-gradient(rgb(23, 23, 160), black);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(50px, auto);
+    gap: 1em;
+    div {
+        background-color: rgb(96, 97, 104);
+        padding: 1em;
+        &:hover {
+            border: 1px solid rgb(23, 63, 193);
+        }
+    }
+}
+
+//--//
+$paleta: ( 'azul-oscuro':#121258, 'dark':rgb(0, 0, 0), 'blanco': #fff);
+@each $color, $valor in $paleta {
+    .fondo-#{$color} {
+        background-color: $valor;
+    }
+}
+
+//maps//
+$palett: ( 'primero': blue,'segundo': red,'tercero': green);
+div {
+    background-color: map-get($map: $palett, $key: 'primero');
+    color: map-get($map: $palett, $key: 'segundo');
+}
+
+//mixin//
+@mixin bordes ($color, $size) {
+    border: $size solid $color;
+    border-radius: 8px;
+}
+
+.contenedor-arriba {
+    @include bordes(red, 10px);
+}

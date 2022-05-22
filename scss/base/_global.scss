@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+.contenedor {
+    padding: 0 70px;
+}
+
+//variables// 
+$azul-oscuro:#121258;
+$blanco:#fff;
+$azul-blanco: #373766;
+$dark: rgb(0, 0, 0);
+//--//
+$paleta: ( 'azul-oscuro':#121258, 'dark':rgb(0, 0, 0), 'blanco': #fff);
+@each $color,
+$valor in $paleta {
+    .fondo-#{$color} {
+        background-color: $valor;
+    }
+}
+
+ //maps//
+$palett: ('primero': blue, 'segundo': red, 'tercero': green);
+div {
+    background-color: map-get($map: $palett, $key: 'primero');
+    color: map-get($map: $palett, $key: 'segundo');
+}
+ //mixin//
+@mixin bordes($color, $size) {
+    border: $size solid $color;
+    border-radius: 8px;
+}
+
